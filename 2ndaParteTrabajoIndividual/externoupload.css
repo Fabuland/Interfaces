@@ -1,0 +1,196 @@
+.contenedorupload{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+   "cabecera cabecera cabecera"
+   "subirmeme subirmeme subirmeme"
+   "footer footer footer";
+   grid-gap: 10px;
+}
+.cabecera{
+    grid-area: cabecera;
+    justify-self: center;
+    background: linear-gradient(to left, #33ccff 73%, #ff99cc 100%);
+    width: 100%;
+    height: 120%;
+    display: flex;
+    text-align:center;
+    align-items: center;
+    border: #ff99cc 3px solid;
+}
+.subirmeme{
+    grid-area: subirmeme;
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+}
+.boton {
+    background-color: black;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    width: 20%;
+    opacity: 0.9;
+    text-align: center;
+}
+.inptext{
+    width: 40%;
+    padding: 10px;
+    margin: 5px 0 0px 0;
+    display: block;
+    border: 1px solid black;
+    background: lightgray;
+}
+.idioma{
+    grid-area: idioma;
+    flex: 1;
+    padding: 10px;
+}
+.imglogo{
+    width: 60%;
+     height: 100%;
+     animation-name: animlogo;
+     animation-duration: 2s;
+     animation-iteration-count: infinite;
+     -webkit-animation-name: animlogo;
+     -webkit-animation-duration: 2s;
+     -webkit-animation-iteration-count: infinite;
+     -moz-animation-name: animlogo;
+     -moz-animation-duration: 2s;
+     -moz-animation-iteration-count: infinite;
+     -o-animation-name: animlogo;
+     -o-animation-duration: 2s;
+     -o-animation-iteration-count: infinite;
+}
+@-webkit-keyframes animlogo{
+     0%{transform: rotate(-10deg);}
+     25%{transform: rotate(10deg);}
+     50%{transform: rotate(-10deg);}
+     75%{transform: rotate(10deg);}
+     100%{transform: rotate(-10deg);}
+}
+@-moz-keyframes animlogo{
+     0%{transform: rotate(-10deg);}
+     25%{transform: rotate(10deg);}
+     50%{transform: rotate(-10deg);}
+     75%{transform: rotate(10deg);}
+     100%{transform: rotate(-10deg);}
+}
+@-o-keyframes animlogo{
+     0%{transform: rotate(-10deg);}
+     25%{transform: rotate(10deg);}
+     50%{transform: rotate(-10deg);}
+     75%{transform: rotate(10deg);}
+     100%{transform: rotate(-10deg);}
+}
+@keyframes animlogo{
+     0%{transform: rotate(-10deg);}
+     25%{transform: rotate(10deg);}
+     50%{transform: rotate(-10deg);}
+     75%{transform: rotate(10deg);}
+     100%{transform: rotate(-10deg);}
+}
+.subirtext{
+    -webkit-transform: rotateX(30deg);
+    -moz-transform: rotateX(30deg);
+    -o-transform: rotateX(30deg);
+    -ms-transform: rotateX(30deg);
+    transform: rotateX(30deg);
+}
+.logo{
+    grid-area: logo;
+    flex: 1;
+    padding: 10px;
+}
+.navegador{
+    grid-area: nav;
+    flex: 1;
+    padding: 10px;
+}
+#areabusq{
+    width: 300px;
+}
+.video{
+    object-fit: cover;
+}
+.videodiv{
+    padding: 20px;
+}
+.footer{
+    grid-area: footer;
+    width: 100%;
+    display: flex;
+}
+.contacto{
+    justify-self: center;
+    float: right;
+    flex: 1;
+    padding: 10px;
+    text-align:center;
+    align-items: center;
+}
+.pasarpag{
+    justify-self: center;
+    flex: 1;
+    padding: 10px;
+    text-align:center;
+    align-items: center;
+}
+.redes{
+    justify-self: center;
+    float: left;
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+body{
+    margin: 0px;
+    font-family: 'Oxygen', sans-serif;
+    background-image: url('fondo.jpg');
+}
+.contacto{
+    border-top: 1px gray solid;
+    border-right: 1px gray solid;
+    object-fit: cover;
+}
+a:link{
+    text-decoration: none;
+    color: red;
+    transition: 0.5s;
+}
+a:visited{
+    color:purple;
+}
+a:active {
+    color: blue;
+}
+a:hover{
+    font-size: 20px;
+}
+@media (max-width: 800px) {
+    .logo{
+         width: 60%;
+    }
+    #areabusq{
+         width: 50%;
+    }
+    .subirmeme{
+        width: 120%;
+        display: block;
+    }
+    .email{
+        width: 20%;
+   }
+    .cabecera{
+        display:block;
+   }
+   .footer{
+        display:block;
+   }
+   .boton{
+       font-size: 12px;
+   }
+}
